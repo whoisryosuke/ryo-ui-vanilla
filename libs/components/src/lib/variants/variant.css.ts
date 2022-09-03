@@ -8,7 +8,7 @@ export const variantVariant = styleVariants({
   outline: {
     backgroundColor: 'none',
     borderWidth: '1px',
-    borderColor: themes.tokens.colors.blue[500],
+    borderColor: themes.tokens.colors.primary.default,
     borderRadius: base.tokens.space[1],
   },
 });
