@@ -1,4 +1,4 @@
-# Gelato UI
+# Ryo UI
 
 React component library and design system powered by Vanilla Extract.
 
