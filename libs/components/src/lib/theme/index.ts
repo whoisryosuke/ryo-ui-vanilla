@@ -1,6 +1,7 @@
 import { light } from './light.css';
 import { base } from './base.css';
 import { colorTokens as tokens } from './colormode.css';
+import { dark } from './dark.css';
 
 /**
  * Color tokens and "themes" (aka color modes)
@@ -8,7 +9,7 @@ import { colorTokens as tokens } from './colormode.css';
 const themes = {
   light,
   tokens,
-  // dark,
+  dark,
 };
 
 export { themes, base };

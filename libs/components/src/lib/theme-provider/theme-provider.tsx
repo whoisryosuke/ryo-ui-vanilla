@@ -11,10 +11,11 @@ export function ThemeProvider({
   const [selectedTheme, setSelectedTheme] = useState<ThemeNames>('light');
 
   const toggleTheme = () => {
+    console.log('toggling theme')
     setSelectedTheme((prevValue) => (prevValue === 'light' ? 'dark' : 'light'));
   };
 
-  const colorMode = selectedTheme === 'light' ? themes.light : themes.light;
+  const colorMode = selectedTheme === 'light' ? themes.light : themes.dark;
   return (
     <ThemeContext.Provider
       value={{
