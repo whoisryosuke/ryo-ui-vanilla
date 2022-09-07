@@ -26,6 +26,11 @@ export const FONTS = {
   monospace: 'Menlo, monospace',
 };
 
+export const FONT_WEIGHTS = {
+  regular: 500,
+  bold: 700,
+}
+
 export const FONT_SIZE_PROPERTIES = {
   0: '12px',
   1: '14px',
