@@ -22,7 +22,7 @@ FontFamily.args = {
 
 export const Heading = HeadingTemplate.bind({});
 Heading.args = {
-  as: 'h1',
+  as: 'h1' as "h1",
   children: `What's up party people`,
   fontFamily: 'heading',
 };
