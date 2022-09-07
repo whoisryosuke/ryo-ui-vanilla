@@ -2,13 +2,13 @@ import { createTheme } from '@vanilla-extract/css';
 import { colorTokens } from './colormode.css';
 
 export const primaryColors = {
-  text: "rgba(6,6,19,1)",
-  reading: "rgba(16,15,40,1)",
-  background: "rgba(239,239,239,1)",
+  text: 'rgba(6,6,19,1)',
+  reading: 'rgba(16,15,40,1)',
+  background: 'rgba(239,239,239,1)',
   primary: {
-    default: "rgba(31,27,216,1)",
-    hovered: "#5854FD",
-    pressed: "#1A17BC"
+    default: 'rgba(31,27,216,1)',
+    hovered: '#5854FD',
+    pressed: '#1A17BC',
   },
   // secondary: primaryColors.purple[500],
   muted: '#f6f6f9',

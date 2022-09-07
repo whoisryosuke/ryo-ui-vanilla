@@ -1,5 +1,10 @@
 import { defineProperties, createSprinkles } from '@vanilla-extract/sprinkles';
-import { FONTS, FONT_SIZE_PROPERTIES, MEDIA_QUERIES, SPACE_PROPERTIES } from '../theme/tokens';
+import {
+  FONTS,
+  FONT_SIZE_PROPERTIES,
+  MEDIA_QUERIES,
+  SPACE_PROPERTIES,
+} from '../theme/tokens';
 
 const responsiveProperties = defineProperties({
   conditions: MEDIA_QUERIES,
@@ -9,8 +14,7 @@ const responsiveProperties = defineProperties({
     fontFamily: FONTS,
     lineHeight: FONT_SIZE_PROPERTIES,
   },
-  shorthands: {
-  },
+  shorthands: {},
 });
 
 export const fontSizeUtilityStyles = createSprinkles(responsiveProperties);

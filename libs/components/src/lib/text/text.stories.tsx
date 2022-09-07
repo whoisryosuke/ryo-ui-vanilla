@@ -6,15 +6,23 @@ export default {
   title: 'Text',
 } as Meta;
 
-const Template: Story<TextProps> = (args) => <Text {...args} />;
+const TextTemplate: Story<TextProps<'p'>> = (args) => <Text {...args} />;
+const HeadingTemplate: Story<TextProps<'h1'>> = (args) => <Text {...args} />;
 
-export const Primary = Template.bind({});
+export const Primary = TextTemplate.bind({});
 Primary.args = {
   children: `What's up party people`,
 };
 
-export const FontFamily = Template.bind({});
+export const FontFamily = TextTemplate.bind({});
 FontFamily.args = {
   children: `What's up party people`,
-  fontFamily: "heading",
+  fontFamily: 'heading',
+};
+
+export const Heading = HeadingTemplate.bind({});
+Heading.args = {
+  as: 'h1',
+  children: `What's up party people`,
+  fontFamily: 'heading',
 };
